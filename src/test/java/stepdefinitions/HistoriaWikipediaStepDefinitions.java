@@ -2,8 +2,11 @@ package stepdefinitions;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import models.DataBusqueda;
 import net.thucydides.core.annotations.Steps;
 import steps.HistoriaWikipediaSteps;
+
+import java.util.List;
 
 public class HistoriaWikipediaStepDefinitions {
 
@@ -15,8 +18,8 @@ public class HistoriaWikipediaStepDefinitions {
     }
 
 
-    @Then("^validar de que le aprezca Explorar historial interactivamente$")
-    public void validarDeQueLeAprezcaExplorarHistorialInteractivamente() {
-        historiaWikipediaSteps.validation("Explorar historial interactivamente");
+    @Then("^validar de que le aprezca el titulo$")
+    public void validarDeQueLeAprezcaElTitulo(List<DataBusqueda> data) {
+        historiaWikipediaSteps.validation(data.get(0).getTxtTitle());
     }
 }

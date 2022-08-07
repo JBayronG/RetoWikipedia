@@ -1,7 +1,10 @@
 package steps;
 
+import models.DataBusqueda;
 import net.thucydides.core.annotations.Step;
 import pageobjects.BusquedaWikiPediaPage;
+
+import java.util.List;
 
 public class BusquedaWikipediaSteps {
     BusquedaWikiPediaPage busquedaWikipedia = new BusquedaWikiPediaPage();

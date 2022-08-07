@@ -6,4 +6,6 @@ Feature: Ver la version de movil y historial
   Scenario: Cambio de version
     Given que john ingresa la url de wikipedia
     When cambia la version a movil y mira el historial
-    Then validar de que le aprezca Explorar historial interactivamente
+    Then validar de que le aprezca el titulo
+     |txtTitle|
+     |Explorar historial interactivamente|
